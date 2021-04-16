@@ -19,26 +19,35 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="141dp"
+        android:layout_height="67dp"
         android:text="INGRESAR"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="268dp" />
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="262dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
         android:text="REGISTRARSE"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="362dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="341dp" />
 
     <Button
         android:id="@+id/button3"
+        android:layout_width="147dp"
+        android:layout_height="52dp"
+        android:text="INVITADO"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INVITADO"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="434dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="25dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
