@@ -4,5 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#626467"
-    tools:context=".MainActivity" />
+    android:background="#D2D2D5"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Body"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:background="#96989A">
+
+        <ImageView
+            android:id="@+id/Logo1"
+            android:layout_width="205dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="103dp"
+            android:contentDescription="@string/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lumen" />
+
+        <TextView
+            android:id="@+id/Label1"
+            android:layout_width="181dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/lumencor"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_surface"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Logo1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
