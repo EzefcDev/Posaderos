@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Posaderos</string>
     <string name="logo">Lumen</string>
-    <string name="lumencor">Lumencor</string>
+    <string name="Label1">Lumencor</string>
+    <string name="Label2">Posaderos</string>
+    <string name="Boton1">Ingresar</string>
+    <string name="Boton2">Registrarse</string>
+    <string name="Boton3">Invitado</string>
+    <string name="ImagenBoton4">Face</string>
+    <string name="ImagenBoton5">Instagram</string>
+    <string name="ImagenBoton6">Twiter</string>
 </resources>
