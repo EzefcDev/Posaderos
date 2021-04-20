@@ -64,9 +64,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="1dp"
         android:layout_marginBottom="0dp"
         android:background="#D2D3D5">
 
@@ -114,10 +114,10 @@
 
         <ImageButton
             android:id="@+id/ImagenBoton4"
-            android:layout_width="60dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="112dp"
-            android:layout_marginBottom="28dp"
+            android:layout_width="49dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginBottom="26dp"
             android:background="@drawable/face"
             android:contentDescription="@string/ImagenBoton4"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -125,9 +125,9 @@
 
         <ImageButton
             android:id="@+id/ImagenBoton5"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="24dp"
+            android:layout_width="55dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="22dp"
             android:background="@drawable/instagram"
             android:contentDescription="@string/ImagenBoton5"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -137,10 +137,10 @@
 
         <ImageButton
             android:id="@+id/ImagenBoton6"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="108dp"
-            android:layout_marginBottom="24dp"
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginBottom="26dp"
             android:background="@drawable/twiter"
             android:contentDescription="@string/ImagenBoton6"
             app:layout_constraintBottom_toBottomOf="parent"
