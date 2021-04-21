@@ -12,7 +12,8 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
     private Button reg;
     private ImageButton instagram, facebook, twitter;
-    private String urlReg, urlInst, urlFace, urlTwi; // declaracion de las variable para la url
+    // declaración de las variable para la url
+    private String urlReg, urlInst, urlFace, urlTwi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
