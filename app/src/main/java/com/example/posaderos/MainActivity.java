@@ -7,27 +7,64 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     private Button reg;
-    private String url; // declaracion de la variable para la url
+    private ImageButton instagram, facebook, twitter;
+    private String urlReg, urlInst, urlFace, urlTwi; // declaracion de las variable para la url
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        reg = findViewById(R.id.Boton2); // asignacion de nombre para el Boton2
+        // asignacion de nombre para los botones
+        reg = findViewById(R.id.Boton2);
+        instagram = findViewById(R.id.ImBinst);
+        facebook = findViewById(R.id.ImBFace);
+        twitter= findViewById(R.id.ImBtwit);
 
-        url = "https://www.posaderos.org/register"; // declaracion de la url de registro
+        // declaracion de las url
+        urlReg = "https://www.posaderos.org/register";
+        urlInst = "https://www.instagram.com/lumen_cor/?hl=es-la";
+        urlFace = "https://www.facebook.com/lumen.cor";
+        urlTwi = "https://twitter.com/lumen_cor";
 
-        //metodo boton registrarse
+        //metodo boton registrarse y redes sociales
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse(url);
+                Uri uri = Uri.parse(urlReg);
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
+            }
+        });
+
+        instagram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse(urlInst);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 Uri uri = Uri.parse(urlFace);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+             }
+        });
+
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+                public void onClick(View view) {
+                    Uri uri = Uri.parse(urlTwi);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(intent);
             }
         });
     }
