@@ -88,6 +88,7 @@
             android:layout_width="235dp"
             android:layout_height="70dp"
             android:layout_marginTop="4dp"
+            android:background="@android:drawable/progress_horizontal"
             android:text="@string/Boton2"
             android:textColor="#FB8C00"
             android:textSize="27sp"
@@ -100,9 +101,11 @@
             android:layout_width="235dp"
             android:layout_height="70dp"
             android:layout_marginTop="4dp"
+            android:background="@android:drawable/progress_horizontal"
+            android:onClick="Invitado"
             android:text="@string/Boton3"
             android:textColor="#3E4095"
-            android:textSize="36sp"
+            android:textSize="35sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Boton2" />
@@ -113,36 +116,36 @@
             android:layout_height="33dp" />
 
         <ImageButton
-            android:id="@+id/ImagenBoton4"
+            android:id="@+id/ImBFace"
             android:layout_width="49dp"
             android:layout_height="40dp"
-            android:layout_marginStart="128dp"
-            android:layout_marginBottom="26dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginBottom="28dp"
             android:background="@drawable/face"
-            android:contentDescription="@string/ImagenBoton4"
+            android:contentDescription="@string/ImBface"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageButton
-            android:id="@+id/ImagenBoton5"
+            android:id="@+id/ImBinst"
             android:layout_width="55dp"
             android:layout_height="46dp"
             android:layout_marginBottom="22dp"
             android:background="@drawable/instagram"
-            android:contentDescription="@string/ImagenBoton5"
+            android:contentDescription="@string/ImaBinst"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageButton
-            android:id="@+id/ImagenBoton6"
+            android:id="@+id/ImBtwit"
             android:layout_width="52dp"
             android:layout_height="40dp"
             android:layout_marginEnd="124dp"
             android:layout_marginBottom="26dp"
             android:background="@drawable/twiter"
-            android:contentDescription="@string/ImagenBoton6"
+            android:contentDescription="@string/ImaBtwit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
