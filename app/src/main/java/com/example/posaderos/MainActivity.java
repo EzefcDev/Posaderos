@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    private Button reg;
+    private Button registrase;
     private ImageButton instagram, facebook, twitter;
     // declaración de las variable para la url
     private String urlReg, urlInst, urlFace, urlTwi;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // asignacion de nombre para los botones
-        reg = findViewById(R.id.Boton2);
+        registrase = findViewById(R.id.Boton2);
         instagram = findViewById(R.id.ImBinst);
         facebook = findViewById(R.id.ImBFace);
         twitter= findViewById(R.id.ImBtwit);
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         urlTwi = "https://twitter.com/lumen_cor";
 
         //metodo boton registrarse y redes sociales
-        reg.setOnClickListener(new View.OnClickListener() {
+        registrase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Uri uri = Uri.parse(urlReg);
@@ -71,8 +71,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //metodo boton invitado
-    public void Invitado (View view){
-        Intent invitado = new Intent(this,Alerta.class);
-        startActivity(invitado);
+     public void Invitado (View view){
+     Intent invitado = new Intent(this,Alerta.class);
+     startActivity(invitado);
     }
+
 }

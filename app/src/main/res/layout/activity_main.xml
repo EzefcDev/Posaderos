@@ -60,6 +60,18 @@
         app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
     <Button
+        android:id="@+id/Boton2"
+        android:layout_width="235dp"
+        android:layout_height="70dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:text="@string/Boton2"
+        android:textColor="#FB8C00"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Boton1" />
+
+    <Button
         android:id="@+id/Boton3"
         android:layout_width="235dp"
         android:layout_height="70dp"
@@ -71,18 +83,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Boton2" />
-
-    <Button
-        android:id="@+id/Boton2"
-        android:layout_width="235dp"
-        android:layout_height="70dp"
-        android:background="@android:drawable/progress_horizontal"
-        android:text="@string/Boton2"
-        android:textColor="#FB8C00"
-        android:textSize="27sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Boton1" />
 
     <ImageButton
         android:id="@+id/ImBFace"
