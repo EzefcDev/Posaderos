@@ -16,5 +16,16 @@
     <string name="BotGenerar">GENERAR ALERTA</string>
     <string name="Imagen1">imagen1</string>
     <string name="Label9">DATOS DEL ASISTIDO</string>
+    <string name="Label10">NOMBRE*</string>
+    <string name="editTextNombre"></string>
+    <string name="Label11">APELLIDO*</string>
+    <string name="editTextApellido"></string>
+    <string name="Label12">DNI*</string>
+    <string name="editTextDni"></string>
+    <string name="Label13">FECHA DE NACIMIENTO*</string>
+    <string name="editTextDate"></string>
+    <string name="Label14">OBSERVACIONES*</string>
+    <string name="editTextObservaciones"></string>
+    <string name="BotSiguiente">Siguiente</string>
 
 </resources>
