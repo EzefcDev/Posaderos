@@ -27,5 +27,6 @@
     <string name="Label14">OBSERVACIONES*</string>
     <string name="editTextObservaciones"></string>
     <string name="BotSiguiente">Siguiente</string>
+    <string name="textP">Prueba</string>
 
 </resources>
