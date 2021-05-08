@@ -1,80 +1,56 @@
 package com.example.posaderos;
 
-import android.app.DownloadManager;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
-
-import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
-
 public class carga_datos1 extends AppCompatActivity {
 
-    EditText ednombre, edapellido, eddni,edfecha, edobser ;
-    Button btnEnviar;
+    private EditText et1, et2, et3, et4, et5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_carga_datos1);
+        setContentView(R.layout.activity_main);
 
-
-        ednombre = (EditText)findViewById(R.id.editTextNombre);
-        edapellido = (EditText)findViewById(R.id.editTextApellido);
-        eddni = (EditText)findViewById(R.id.editTextDni);
-        edfecha = (EditText)findViewById(R.id.editTextDate);
-        edobser = (EditText)findViewById(R.id.editTextObservaciones);
-        btnEnviar = (Button)findViewById(R.id.button);
-
-        btnEnviar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ejecutarServicio("http://192.168.100.17:80/devposaderos/carga_datos.php");
-            }
-        });
+        et1 =(EditText)findViewById(R.id.editTextNombre);
+        et2 =(EditText)findViewById(R.id.editTextApellido);
+        et3 =(EditText)findViewById(R.id.editTextDni);
+        et4 =(EditText)findViewById(R.id.editTextDate);
+        et5 =(EditText)findViewById(R.id.editTextObservaciones);
     }
+    public void enviar(View v){
+        Intent envio= new Intent(this, carga_datos2.class);
 
-    private void ejecutarServicio(String URL){
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Toast.makeText(getApplicationContext(), "OPERACION EXITOSA", Toast.LENGTH_SHORT).show();
-            }
-        }, new Response.ErrorListener(){
-                @Override
-                public void onErrorResponse(VolleyError error){
-                    Toast.makeText(getApplicationContext(), error.toString(),Toast.LENGTH_SHORT).show();
-            }
-        }){
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> parametros = new HashMap<String, String>();
-                parametros.put("nombre",ednombre.getText().toString());
-                parametros.put("apellido",edapellido.getText().toString());
-                parametros.put("dni",eddni.getText().toString());
-                parametros.put("fechaNacimiento",edfecha.getText().toString());
-                parametros.put("observaciones",edobser.getText().toString());
-                return parametros;
-            }
-        };
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
+        String nombre = et1.getText().toString();
+        String apellido = et2.getText().toString();
+        String dni = et3.getText().toString();
+        String fecha = et4.getText().toString();
+
+        if(nombre.length() == 0 ){
+            Toast.makeText(this, "Debes completar el campo Nombre", Toast.LENGTH_LONG).show();
+        }
+        if(apellido.length() == 0 ){
+            Toast.makeText(this, "Debes completar el campo Apellido", Toast.LENGTH_LONG).show();
+        }
+        if(dni.length() == 0 ){
+            Toast.makeText(this, "Debes completar el campo DNI", Toast.LENGTH_LONG).show();
+        }
+        if(fecha.length() == 0 ){
+            Toast.makeText(this, "Debes completar el campo Fecha", Toast.LENGTH_LONG).show();
+        }
+        if (nombre.length() != 0 && apellido.length() != 0 && dni.length() != 0 && fecha.length() != 0){
+
+            envio.putExtra("datos", nombre );
+            envio.putExtra("datos1", apellido );
+            envio.putExtra("datos2", dni);
+            envio.putExtra("datos3", fecha);
+            envio.putExtra("datos4", et5.getText().toString());
+            startActivity(envio);
+        }
     }
-
 }

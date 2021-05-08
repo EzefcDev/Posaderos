@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Posaderos">
-        <activity android:name=".carga_datos2"></activity>
+        <activity android:name=".carga_confirmacion"></activity>
+        <activity android:name=".carga_datos2" />
         <activity android:name=".carga_datos1" />
         <activity android:name=".Alerta" />
         <activity android:name=".MainActivity">
