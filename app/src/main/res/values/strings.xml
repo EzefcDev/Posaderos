@@ -31,5 +31,6 @@
     <string name="button2">Atras</string>
     <string name="button3">Siguiente</string>
     <string name="button5">Confirmacion</string>
+    <string name="editTextInstitucion">Institucion</string>
 
 </resources>

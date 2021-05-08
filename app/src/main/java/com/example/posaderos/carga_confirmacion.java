@@ -29,10 +29,10 @@ public class carga_confirmacion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_muestra);
+        setContentView(R.layout.activity_carga_confirmacion);
 
-        tv1=(TextView)findViewById(R.id.textM);
-        btnEnviar = (Button)findViewById(R.id.button);
+        tv1=(TextView)findViewById(R.id.tv1);
+        btnEnviar = (Button)findViewById(R.id.button5);
 
         Bundle extras = getIntent().getExtras();
         datos = extras.getString("datos1");
