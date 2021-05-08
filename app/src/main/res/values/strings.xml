@@ -28,5 +28,8 @@
     <string name="editTextObservaciones"></string>
     <string name="BotSiguiente">Siguiente</string>
     <string name="textP">Prueba</string>
+    <string name="button2">Atras</string>
+    <string name="button3">Siguiente</string>
+    <string name="button5">Confirmacion</string>
 
 </resources>

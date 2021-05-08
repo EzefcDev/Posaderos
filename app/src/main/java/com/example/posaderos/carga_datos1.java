@@ -23,7 +23,7 @@ public class carga_datos1 extends AppCompatActivity {
         et4 =(EditText)findViewById(R.id.editTextDate);
         et5 =(EditText)findViewById(R.id.editTextObservaciones);
     }
-    public void enviar(View v){
+    public void siguiente(View v){
         Intent envio= new Intent(this, carga_datos2.class);
 
         String nombre = et1.getText().toString();

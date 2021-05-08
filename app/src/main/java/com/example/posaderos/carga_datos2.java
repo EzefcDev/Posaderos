@@ -17,7 +17,7 @@ public class carga_datos2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dato);
 
-        et1 =(EditText)findViewById(R.id.editInfo1);
+        et1 =(EditText)findViewById(R.id.edt1);
 
         d = getIntent().getStringExtra("datos");
         d1 = getIntent().getStringExtra("datos1");
@@ -28,7 +28,7 @@ public class carga_datos2 extends AppCompatActivity {
 
     }
     public void siguiente(View v){
-        Intent siguiente = new Intent(this,muestra.class);
+        Intent siguiente = new Intent(this, carga_confirmacion.class);
         siguiente.putExtra("datos1", et1.getText().toString());
         siguiente.putExtra("datos2",d);
         siguiente.putExtra("datos3",d1);

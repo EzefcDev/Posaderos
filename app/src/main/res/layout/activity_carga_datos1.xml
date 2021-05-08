@@ -226,6 +226,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:drawable/progress_horizontal"
+        android:onClick="siguiente"
         android:text="@string/BotSiguiente"
         android:textColor="@color/teal_200"
         android:textSize="18sp"
