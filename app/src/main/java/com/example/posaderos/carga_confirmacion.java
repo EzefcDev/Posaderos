@@ -47,7 +47,7 @@ public class carga_confirmacion extends AppCompatActivity {
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ejecutarServicio("http://192.168.100.17:80/devposaderos/carga_datos.php");
+                ejecutarServicio("http://192.168.100.17:80/devposaderos/carga_datos.php"); //aqui se cambia la ip y el puerto
 
             }
         });
