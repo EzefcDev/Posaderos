@@ -48,7 +48,6 @@ public class carga_confirmacion extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ejecutarServicio("http://192.168.100.17:80/devposaderos/carga_datos.php"); //aqui se cambia la ip y el puerto
-
             }
         });
 
@@ -79,8 +78,9 @@ public class carga_confirmacion extends AppCompatActivity {
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
+        Intent confirmacion= new Intent(this,pantalla_final.class);
+        startActivity(confirmacion);
     }
-
 
     public void atras(View v){
         Intent atras= new Intent(this, carga_datos2.class);
