@@ -14,7 +14,6 @@
         <activity android:name=".pantalla_final"></activity>
         <activity android:name=".carga_confirmacion" />
         <activity android:name=".carga_datos2" />
-        <activity android:name=".carga_datos1" />
         <activity android:name=".Alerta" />
         <activity android:name=".MainActivity">
             <intent-filter>
