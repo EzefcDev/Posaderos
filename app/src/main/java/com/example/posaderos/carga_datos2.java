@@ -38,7 +38,7 @@ public class carga_datos2 extends AppCompatActivity {
         startActivity(siguiente);
     }
     public void atras(View v){
-        Intent atras= new Intent(this, carga_datos1.class);
+        Intent atras= new Intent(this,MainActivity.class);
         startActivity(atras);
     }
 

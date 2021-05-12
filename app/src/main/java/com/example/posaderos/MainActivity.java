@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton instagram, facebook, twitter;
     // declaración de las variable para la url
     private String urlReg, urlInst, urlFace, urlTwi;
-
+//hhhh
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
