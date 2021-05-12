@@ -17,11 +17,11 @@ public class carga_datos1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carga_datos1);
 
-        et1 =(EditText)findViewById(R.id.editTextNombre);
-        et2 =(EditText)findViewById(R.id.editTextApellido);
-        et3 =(EditText)findViewById(R.id.editTextDni);
-        et4 =(EditText)findViewById(R.id.editTextDate);
-        et5 =(EditText)findViewById(R.id.editTextObservaciones);
+        et1 =(EditText)findViewById(R.id.editNom);
+        et2 =(EditText)findViewById(R.id.editApe);
+        et3 =(EditText)findViewById(R.id.editDni);
+        et4 =(EditText)findViewById(R.id.editDate);
+        et5 =(EditText)findViewById(R.id.editObser);
     }
     public void siguiente(View v){
         Intent envio= new Intent(this, carga_datos2.class);
