@@ -72,7 +72,7 @@
         app:layout_constraintHorizontal_bias="0.218"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintVertical_bias="0.098" />
 
     <TextView
         android:id="@+id/Label10"
@@ -83,7 +83,7 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Label9" />
 
@@ -91,42 +91,41 @@
         android:id="@+id/Label11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:text="@string/Label11"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Label10" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editNom" />
 
     <TextView
         android:id="@+id/Label12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="12dp"
         android:text="@string/Label12"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Label11" />
+        app:layout_constraintTop_toBottomOf="@+id/editApe" />
 
     <TextView
         android:id="@+id/Label13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="20dp"
         android:hint="@string/editTextNombre"
         android:text="@string/Label13"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Label10" />
+        app:layout_constraintTop_toBottomOf="@+id/editDNI" />
 
     <Button
         android:id="@+id/button"
@@ -141,16 +140,16 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Label14"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editObs"
+        app:layout_constraintVertical_bias="0.265" />
 
     <TextView
         android:id="@+id/Label14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="8dp"
         android:hint="@string/editTextDni"
         android:text="@string/Label14"
         android:textColor="@color/black"
@@ -158,60 +157,68 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Label10" />
+        app:layout_constraintTop_toBottomOf="@+id/editFecha" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editApe"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
         android:background="@color/white"
         android:ems="10"
+        android:hint="@string/editTextApellido"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="222dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Label11"
+        tools:layout_editor_absoluteX="33dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editNom"
+        android:layout_width="217dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
         android:background="@color/white"
         android:ems="10"
+        android:hint="@string/editTextNombre"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Label10"
+        tools:layout_editor_absoluteX="34dp" />
 
     <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editFecha"
+        android:layout_width="216dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
         android:background="@color/white"
         android:ems="10"
+        android:hint="@string/editTextDate"
         android:inputType="date"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Label13"
+        tools:layout_editor_absoluteX="34dp" />
 
     <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editDNI"
+        android:layout_width="217dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
         android:background="@color/white"
         android:ems="10"
+        android:hint="@string/editTextDni"
         android:inputType="number"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Label12"
+        tools:layout_editor_absoluteX="33dp" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editObs"
+        android:layout_width="201dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
         android:background="@color/white"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="@string/editTextObservaciones"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="486dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Label14"
+        tools:layout_editor_absoluteX="33dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,11 +17,11 @@ public class carga_datos1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carga_datos1);
 
-        et1 =(EditText)findViewById(R.id.editTextNombre);
-        et2 =(EditText)findViewById(R.id.editTextApellido);
-        et3 =(EditText)findViewById(R.id.editTextDni);
-        et4 =(EditText)findViewById(R.id.editTextDate);
-        et5 =(EditText)findViewById(R.id.editTextObservaciones);
+        et1 =(EditText)findViewById(R.id.editNom);
+        et2 =(EditText)findViewById(R.id.editApe);
+        et3 =(EditText)findViewById(R.id.editDNI);
+        et4 =(EditText)findViewById(R.id.editFecha);
+        et5 =(EditText)findViewById(R.id.editObs);
     }
     public void siguiente(View v){
         Intent envio= new Intent(this, carga_datos2.class);
@@ -40,10 +40,7 @@ public class carga_datos1 extends AppCompatActivity {
         if(dni.length() == 0 ){
             Toast.makeText(this, "Debes completar el campo DNI", Toast.LENGTH_LONG).show();
         }
-        if(fecha.length() == 0 ){
-            Toast.makeText(this, "Debes completar el campo Fecha", Toast.LENGTH_LONG).show();
-        }
-        if (nombre.length() != 0 && apellido.length() != 0 && dni.length() != 0 && fecha.length() != 0){
+        if (nombre.length() != 0 && apellido.length() != 0 && dni.length() != 0){
 
             envio.putExtra("datos", nombre );
             envio.putExtra("datos1", apellido );
