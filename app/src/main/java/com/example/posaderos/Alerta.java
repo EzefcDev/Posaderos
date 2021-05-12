@@ -14,7 +14,7 @@ public class Alerta extends AppCompatActivity {
         setContentView(R.layout.activity_alerta);
     }
     public void Generar(View view){
-        Intent generar = new Intent(this,carga_datos1.class);
+        Intent generar = new Intent(this, carga_datos1.class);
         startActivity(generar);
     }
 

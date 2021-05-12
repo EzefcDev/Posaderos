@@ -32,5 +32,7 @@
     <string name="button3">Siguiente</string>
     <string name="button5">Confirmacion</string>
     <string name="editTextInstitucion">Institucion</string>
+    <string name="button6">Inicio</string>
+    <string name="tvFinal">Gracias por su colaboracion</string>
 
 </resources>
