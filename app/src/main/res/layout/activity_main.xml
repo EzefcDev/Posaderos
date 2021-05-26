@@ -69,6 +69,7 @@
         android:layout_height="180dp"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/fondo2"
+        android:onClick="PantAlerta"
         android:shadowColor="#B5ACAC"
         android:shadowDx="@dimen/material_emphasis_medium"
         android:shadowDy="@dimen/material_emphasis_high_type"

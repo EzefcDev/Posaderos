@@ -1,72 +1,63 @@
 package com.example.posaderos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
-    private Button registrase;
-    private ImageButton instagram, facebook;
+
+    // asignacion de nombre para los botones
+    @SuppressLint("WrongViewCast")
+    private final ImageButton instagram = findViewById(R.id.imgBinsta);
+    @SuppressLint("WrongViewCast")
+    private final ImageButton facebook = findViewById(R.id.imgBface);
+    @SuppressLint("WrongViewCast")
+    private final ImageButton lumencor = findViewById(R.id.imgBlumen);
 
     // declaración de las variable para la url
-    private String urlReg, urlInst, urlFace;
+    private String urlInst, urlFace, urlLum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // asignacion de nombre para los botones
-        registrase = findViewById(R.id.Boton2);
-        instagram = findViewById(R.id.ImBinst);
-        facebook = findViewById(R.id.ImBFace);
-        //twitter= findViewById(R.id.ImBtwit);
-
-        // declaracion de las url
-        urlReg = "https://www.posaderos.org/register";
+        // declaración de las url
+        urlLum = "https://www.lumencor.org";
         urlInst = "https://www.instagram.com/lumen_cor/?hl=es-la";
         urlFace = "https://www.facebook.com/lumen.cor";
 
 
-        //metodo boton registrarse y redes sociales
-        registrase.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Uri uri = Uri.parse(urlReg);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
+        //metodo botones redes sociales
+        lumencor.setOnClickListener(view -> {
+            Uri uri = Uri.parse(urlLum);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         });
 
-        instagram.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Uri uri = Uri.parse(urlInst);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
+        instagram.setOnClickListener(view -> {
+            Uri uri = Uri.parse(urlInst);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         });
 
-        facebook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                 Uri uri = Uri.parse(urlFace);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-             }
-        });
+        facebook.setOnClickListener(view -> {
+             Uri uri = Uri.parse(urlFace);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+         });
 
     }
 
-    //metodo boton invitado
-     public void Invitado (View view){
-     Intent invitado = new Intent(this,Alerta.class);
-     startActivity(invitado);
+    //metodo boton
+     public void PantAlerta(View view){
+     Intent activity = new Intent(this,Alerta.class);
+     startActivity(activity);
     }
 
 }
