@@ -1,8 +1,17 @@
 <resources>
     <string name="app_name">Posaderos</string>
     <string name="logo">Lumen</string>
-    <string name="Label1">Lumencor</string>
-    <string name="Label2">Posaderos</string>
+    <string name="txtView1">Posaderos</string>
+    <string name="txtView2">LumenCor</string>
+    <string name="txtView3">¿CONOCES A ALGUIEN EN SITUACION DE VULNERABILIDAD?</string>
+    <string name="button">HAZ CLICK AQUÍ</string>
+    <string name="imgBlumen">lumen</string>
+    <string name="imgBface">facebook</string>
+    <string name="imgBinsta">instagram</string>
+
+
+
+
     <string name="Boton1">Ingresar</string>
     <string name="Boton2">Registrarse</string>
     <string name="Boton3">Invitado</string>
