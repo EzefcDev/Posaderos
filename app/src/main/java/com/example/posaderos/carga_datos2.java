@@ -17,7 +17,7 @@ public class carga_datos2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carga_datos2);
 
-        et1=(EditText)findViewById(R.id.editTextIndtitucion);
+        et1 = findViewById(R.id.editTextIndtitucion);
 
         d = getIntent().getStringExtra("datos");
         d1 = getIntent().getStringExtra("datos1");
