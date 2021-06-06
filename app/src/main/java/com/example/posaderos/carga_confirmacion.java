@@ -42,7 +42,9 @@ public class carga_confirmacion extends AppCompatActivity {
         datos4 = extras.getString("datos5");
         datos5 = extras.getString("datos6");
 
-        tv1.setText(datos1 + datos2 + datos3 + datos4 + datos5 + datos );
+        tv1.setText("Nombre: " + datos1 + "\n Apellido: " + datos2 + "\n DNI: " + datos3 +
+                "\n Fecha de nacimiento: " + datos4 + "\n Obsercion: " + datos5 + "\n Institucion: "
+                + datos );
 
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
