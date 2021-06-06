@@ -30,17 +30,32 @@ public class carga_datos1 extends AppCompatActivity {
         String apellido = et2.getText().toString();
         String dni = et3.getText().toString();
         String fecha = et4.getText().toString();
+        boolean letraNombre = false;
+        boolean letraApellido = false;
 
         if(nombre.length() == 0 ){
             Toast.makeText(this, "Debes completar el campo Nombre", Toast.LENGTH_LONG).show();
+        }else{
+            letraNombre = contieneSoloLetras(nombre);
+            if(!letraNombre){
+                Toast.makeText(this, "El campo Nombre contiene caracteres que no son letras", Toast.LENGTH_LONG).show();
+            }else{
+                if(apellido.length() == 0 ){
+                    Toast.makeText(this, "Debes completar el campo Apellido", Toast.LENGTH_LONG).show();
+                }else{
+                    letraApellido = contieneSoloLetras(apellido);
+                    if(!letraApellido){
+                        Toast.makeText(this, "El campo Apellido contiene caracteres que no son letras", Toast.LENGTH_LONG).show();
+                    }else{
+                        if(dni.length() < 7 ){
+                            Toast.makeText(this, "Debes completar el campo DNI", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
+            }
         }
-        if(apellido.length() == 0 ){
-            Toast.makeText(this, "Debes completar el campo Apellido", Toast.LENGTH_LONG).show();
-        }
-        if(dni.length() == 0 ){
-            Toast.makeText(this, "Debes completar el campo DNI", Toast.LENGTH_LONG).show();
-        }
-        if (nombre.length() != 0 && apellido.length() != 0 && dni.length() != 0){
+        if (nombre.length() != 0 && letraNombre && apellido.length() != 0 &&
+                letraApellido && dni.length() >= 7){
 
             envio.putExtra("datos", nombre );
             envio.putExtra("datos1", apellido );
@@ -49,5 +64,15 @@ public class carga_datos1 extends AppCompatActivity {
             envio.putExtra("datos4", et5.getText().toString());
             startActivity(envio);
         }
+    }
+    public static boolean contieneSoloLetras(String cadena) {
+        for (int x = 0; x < cadena.length(); x++) {
+            char c = cadena.charAt(x);
+            // Si no está entre a y z, ni entre A y Z, ni es un espacio
+            if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == ' ')) {
+                return false;
+            }
+        }
+        return true;
     }
 }
