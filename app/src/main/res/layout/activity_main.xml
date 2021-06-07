@@ -107,7 +107,7 @@
         android:onClick="GenerarSoS"
         android:text="@string/button"
         android:textColor="@color/basico_organge2"
-        android:textSize="45sp"
+        android:textSize="96sp"
         android:textStyle="bold"
         app:backgroundTint="@color/fondo2"
         app:cornerRadius="?attr/dialogPreferredPadding"
