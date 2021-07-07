@@ -6,13 +6,15 @@
     <string name="txtView3">ALERTA</string>
     <string name="txtView4">Persona en situacíón de calle</string>
     <string name="txtView5">"solicito ayuda"</string>
-    <string name="button">S.O.S</string>
+    <string name="txtView7">Paso 1: Complete los datos del asistido</string>
+    <string name="txtView8">DATOS DEL ASISTIDO</string>
+    <string name="button_SoS">S.O.S</string>
     <string name="ImgBface">Face</string>
     <string name="ImgBinst">Instagram</string>
     <string name="ImgBlumen">Lumen</string>
     <string name="butGenerar">GENERAR UN ALERTA</string>
 
-    <string name="txtView7">Paso 1: Complete los datos del asistido</string>
+
     <string name="imgvasist">imagen asistido</string>
     <string name="BotSoS">S.O.S</string>
 
@@ -23,7 +25,7 @@
 
 
 
-    <string name="Label9">DATOS DEL ASISTIDO</string>
+
     <string name="Label10">NOMBRE*</string>
     <string name="editTextNombre">Nombre</string>
     <string name="Label11">APELLIDO*</string>

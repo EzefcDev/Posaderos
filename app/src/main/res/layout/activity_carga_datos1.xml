@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtView4"
+        android:id="@+id/txtView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -61,7 +61,7 @@
         android:id="@+id/Label9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Label9"
+        android:text="@string/txtView8"
         android:textColor="@color/basico_organge2"
         android:textSize="18sp"
         android:textStyle="bold"
