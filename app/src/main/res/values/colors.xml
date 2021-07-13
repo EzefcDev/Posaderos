@@ -8,17 +8,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="basico_red">#B41E1E</color>
-    <color name="basico_red2">#730404</color>
+    //colores Lunen
+    <color name="basico_red">#DD1515</color>
+    <color name="basico_red2">#C20E1A</color>
+    <color name="basico_grisCL">#ECE3E3</color>
     <color name="basico_organge1">#DC901B</color>
     <color name="basico_organge2">#D27122</color>
     <color name="basico_verdeCL">#3F9A46</color>
     <color name="basico_azul">#1268B0</color>
     <color name="basico_azulCL">#36A8E0</color>
-    <color name="fondo1">#D5C9B0</color>
-    <color name="fondo1a">#DD8383</color>
-    <color name="fondo2">#F4EBD7</color>
-    <color name="fondo3">#FDF7E7</color>
+    <color name="fondo1">#D8B4B7</color>
+    <color name="fondo2">#F9E8EA</color>
+    <color name="fondo3">#F9EFF0</color>
 
 
 </resources>

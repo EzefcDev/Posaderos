@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     //metodo boton
      public void PantAlerta(View view){
-     Intent activity = new Intent(this,Alerta.class);
+     Intent activity = new Intent(this,carga_datos1.class);
      startActivity(activity);
     }
 

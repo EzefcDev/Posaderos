@@ -1,13 +1,18 @@
 <resources>
-    <string name="app_name">Posaderos</string>
-    <string name="logo">Lumen</string>
-    <string name="txtView1">Posaderos</string>
-    <string name="txtView2">LumenCor</string>
-    <string name="txtView3">¿CONOCES A ALGUIEN EN SITUACION DE VULNERABILIDAD?</string>
-    <string name="button">HAZ CLICK AQUÍ</string>
-    <string name="imgBlumen">lumen</string>
-    <string name="imgBface">facebook</string>
-    <string name="imgBinsta">instagram</string>
+    <string name="app_name"> Posaderos.org </string>
+    <string name="Logo">imagen logo</string>
+    <string name="imgView1">la ayuda sos vos</string>
+    <string name="imgView2">imagen logo horizontal</string>
+    <string name="BotonEnviar">Enviar Alerta!!</string>
+    <string name="txtView1">Si ves una <b>persona en situación de calle,<font color="red"> puedes
+                            ayudarla de forma rápida y sencilla,</font></b> enviando una Alerta
+                            a nuestros equipos de voluntarios para que puedan asistirlo.</string>
+    <string name="txtView2">Segui los siguientes pasos…</string>
+    <string name="BotonSiguiente">Siguiente Paso</string>
+    <string name="txtView3">Ingresa los datos del Asistido</string>
+    <string name="txtView4">Nombre</string>
+    <string name="editTextNombre" />
+
 
 
 
