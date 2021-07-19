@@ -11,7 +11,8 @@
     //colores Lunen
     <color name="basico_red">#DD1515</color>
     <color name="basico_red2">#C20E1A</color>
-    <color name="basico_grisCL">#ECE3E3</color>
+    <color name="basico_gris">#ECECEC</color>
+    <color name="basico_grisCL">#F2F2F2</color>
     <color name="basico_organge1">#DC901B</color>
     <color name="basico_organge2">#D27122</color>
     <color name="basico_verdeCL">#3F9A46</color>

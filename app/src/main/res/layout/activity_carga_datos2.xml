@@ -1,73 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2D5D7"
+    android:background="@color/fondo2"
+    android:scrollbars="vertical"
     tools:context=".carga_datos2">
 
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BotonSiguiente"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/basico_red2"
+        android:onClick="siguiente2"
+        android:text="@string/BotonSiguiente"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:cornerRadius="@android:dimen/notification_large_icon_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonAtras"
+        tools:ignore="RtlCompat,RtlHardcoded"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/BotonAtras"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/fondo1"
+        android:text="@string/BotonAtras"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:cornerRadius="@android:dimen/notification_large_icon_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerInstitucion"
+        tools:ignore="RtlCompat,RtlHardcoded"
+        tools:targetApi="lollipop" />
+
     <ImageView
-        android:id="@+id/Logo3"
-        android:layout_width="51dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="2dp"
+        android:id="@+id/imgView3"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/basico_gris"
         android:contentDescription="@string/Logo"
-        android:src="@drawable/lumen"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/BotonSiguiente"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logohorizontal1" />
 
     <TextView
-        android:id="@+id/txtView6"
+        android:id="@+id/txtView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/txtView2"
+        android:layout_marginTop="5dp"
+        android:text="@string/txtView4"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/BotonSoS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="92dp"
-        android:onClick="atras"
-        android:text="@string/button2"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextIndtitucion" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="84dp"
-        android:onClick="siguiente"
-        android:text="@string/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextIndtitucion" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <EditText
-        android:id="@+id/editTextIndtitucion"
-        android:layout_width="226dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="132dp"
-        android:background="@color/white"
+        android:id="@+id/editTextObservacion"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/basico_gris"
         android:ems="10"
-        android:hint="@string/editTextInstitucion"
+        android:hint="@string/editTextMapa"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView4" />
+
+    <EditText
+        android:id="@+id/spinnerInstitucion"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/basico_gris"
+        android:ems="10"
+        android:hint="@string/spinnerInstitucion"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextObservacion"
         android:importantForAutofill="no" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

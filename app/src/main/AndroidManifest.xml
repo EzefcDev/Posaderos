@@ -13,22 +13,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posaderos"
         tools:ignore="AllowBackup">
-        <activity android:name=".pantalla_final"/>
-        <activity android:name=".carga_confirmacion" />
-        <activity android:name=".carga_datos2" />
-        <activity android:name=".carga_datos1" />
-        <activity android:name=".Alerta" />
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".splash_lumen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".carga_datos1"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".carga_datos2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".carga_confirmacion" />
+        <activity android:name=".pantalla_final" />
     </application>
 
 </manifest>

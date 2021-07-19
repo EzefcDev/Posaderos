@@ -4,135 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo1a"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgVLogo"
-        android:layout_width="119dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="@string/logo"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lumen" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView1"
+        android:layout_width="339dp"
+        android:layout_height="158dp"
+        android:contentDescription="@string/imgView1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/laayudasosvos" />
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:background="@color/basico_gris"
+        android:contentDescription="@string/Logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonEnviar"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logohorizontal1" />
+
+    <Button
+        android:id="@+id/BotonEnviar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/basico_red2"
+        android:drawableLeft="@drawable/alertaicon"
+        android:onClick="BotonEnviar"
+        android:text="@string/BotonEnviar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:cornerRadius="@android:dimen/notification_large_icon_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="RtlCompat,RtlHardcoded,UsingOnClickInXml"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/txtView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="360dp"
+        android:layout_height="170dp"
+        android:layout_margin="8dp"
+        android:justificationMode="inter_word"
         android:text="@string/txtView1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/fondo3"
-        android:textSize="34sp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/basico_red2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/imgVLogo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/txtView2"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:text="@string/txtView2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/fondo3"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtView1"/>
-
-    <TextView
-        android:id="@+id/txtView3"
-        android:layout_width="400dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="183dp"
-        android:text="@string/txtView3"
-        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
-
-    <Button
-        android:id="@+id/Boton"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="282dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@color/fondo2"
-        android:onClick="PantAlerta"
-        android:shadowColor="#B5ACAC"
-        android:shadowDx="@dimen/material_emphasis_medium"
-        android:shadowDy="@dimen/material_emphasis_high_type"
-        android:shadowRadius="@dimen/material_emphasis_high_type"
-        android:text="@string/button"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/basico_organge2"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:cornerRadius="?attr/dialogPreferredPadding"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtView3"
-        app:strokeColor="@color/basico_red2"
-        app:strokeWidth="4dp"
-        tools:targetApi="lollipop" />
-
-    <View
-        android:id="@+id/divider3"
-        android:layout_width="400dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/fondo2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtView2" />
-
-    <ImageView
-        android:id="@+id/imgBface"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/imgBface"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Boton"
-        app:srcCompat="@drawable/circleface" />
+        app:layout_constraintTop_toBottomOf="@+id/txtView1"
+        app:layout_constraintVertical_bias="0.060000002" />
 
-    <ImageView
-        android:id="@+id/imgBlumen"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/imgBlumen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Boton"
-        app:srcCompat="@drawable/circlelumen" />
-
-    <ImageView
-        android:id="@+id/imgBinsta"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/imgBinsta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Boton"
-        app:srcCompat="@drawable/circleinsta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

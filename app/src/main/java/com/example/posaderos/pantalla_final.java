@@ -15,7 +15,7 @@ public class pantalla_final extends AppCompatActivity {
     }
 
     public void principal(View v){
-        Intent principal= new Intent(this, MainActivity.class);
+        Intent principal= new Intent(this, splash_lumen.class);
         startActivity(principal);
     }
 }

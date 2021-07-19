@@ -4,42 +4,32 @@
     <string name="imgView1">la ayuda sos vos</string>
     <string name="imgView2">imagen logo horizontal</string>
     <string name="BotonEnviar">Enviar Alerta!!</string>
+
     <string name="txtView1">Si ves una <b>persona en situación de calle,<font color="red"> puedes
                             ayudarla de forma rápida y sencilla,</font></b> enviando una Alerta
                             a nuestros equipos de voluntarios para que puedan asistirlo.</string>
+
     <string name="txtView2">Segui los siguientes pasos…</string>
     <string name="BotonSiguiente">Siguiente Paso</string>
+    <string name="BotonAtras">Atras</string>
     <string name="txtView3">Ingresa los datos del Asistido</string>
-    <string name="txtView4">Nombre</string>
+    <string name="txtViewNombre">Nombre</string>
     <string name="editTextNombre" />
+    <string name="txtViewApellido">Apellido</string>
+    <string name="editTextApellido" />
+    <string name="txtViewDni">DNI</string>
+    <string name="editTextDni" />
+    <string name="txtViewDate">Fecha de nacimiento</string>
+    <string name="editTextDate" />
+    <string name="txtViewObservaciones">Observaciones</string>
+    <string name="editTextObservaciones" />
+    <string name="txtView4">Elegí el posadero más cercano.</string>
+    <string name="editTextMapa">MAPA</string>
+    <string name="spinnerInstitucion" />
 
 
 
-
-
-    <string name="Boton1">Ingresar</string>
-    <string name="Boton2">Registrarse</string>
-    <string name="Boton3">Invitado</string>
-    <string name="ImBface">Face</string>
-    <string name="ImaBinst">Instagram</string>
-    <string name="ImaBtwit">Twiter</string>
-    <string name="Label4">Hola xxxxxxx!!</string>
-    <string name="Label5">Bienvenidos a la Red del posaderos</string>
-    <string name="Label6">¡Avisanos para poder Ayudarte!</string>
-    <string name="Label7">¿CONOCES A ALGUIEN EN SITUACION DE VULNERABILIDAD?</string>
-    <string name="BotGenerar">GENERAR ALERTA</string>
-    <string name="Imagen1">imagen1</string>
-    <string name="Label9">DATOS DEL ASISTIDO</string>
-    <string name="Label10">NOMBRE*</string>
-    <string name="editTextNombre">Nombre</string>
-    <string name="Label11">APELLIDO*</string>
-    <string name="editTextApellido">Apellido</string>
-    <string name="Label12">DNI*</string>
-    <string name="editTextDni">DNI</string>
-    <string name="Label13">FECHA DE NACIMIENTO</string>
-    <string name="editTextDate">AAAA/MM/DD</string>
-    <string name="Label14">OBSERVACIONES</string>
-    <string name="editTextObservaciones">Observacion</string>
+    <string name="Imagen1">imagen</string>
     <string name="BotSiguiente">Siguiente</string>
     <string name="textP">Prueba</string>
     <string name="button2">Atras</string>
