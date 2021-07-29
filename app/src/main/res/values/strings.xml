@@ -4,6 +4,7 @@
     <string name="imgView1">la ayuda sos vos</string>
     <string name="imgView2">imagen logo horizontal</string>
     <string name="BotonEnviar">Enviar Alerta!!</string>
+    <string name="BotonAtras">Atras</string>
 
     <string name="txtView1">Si ves una <b>persona en situación de calle,<font color="red"> puedes
                             ayudarla de forma rápida y sencilla,</font></b> enviando una Alerta
@@ -11,7 +12,6 @@
 
     <string name="txtView2">Segui los siguientes pasos…</string>
     <string name="BotonSiguiente">Siguiente Paso</string>
-    <string name="BotonAtras">Atras</string>
     <string name="txtView3">Ingresa los datos del Asistido</string>
     <string name="txtViewNombre">Nombre</string>
     <string name="editTextNombre" />
@@ -28,7 +28,12 @@
     <string name="spinnerInstitucion" />
 
 
-
+    <string name="Boton1">Ingresar</string>
+    <string name="Boton2">Registrarse</string>
+    <string name="Boton3">Invitado</string>
+    <string name="ImBface">Face</string>
+    <string name="ImaBinst">Instagram</string>
+    <string name="ImaBtwit">Twiter</string>
     <string name="Imagen1">imagen</string>
     <string name="BotSiguiente">Siguiente</string>
     <string name="textP">Prueba</string>

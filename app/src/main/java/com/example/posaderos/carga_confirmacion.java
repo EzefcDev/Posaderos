@@ -1,13 +1,16 @@
 package com.example.posaderos;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -26,13 +29,15 @@ public class carga_confirmacion extends AppCompatActivity {
     Button btnEnviar;
     String datos1,datos2,datos3,datos4,datos5,datos;
 
+
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carga_confirmacion);
 
-        tv1=(TextView)findViewById(R.id.tv1);
-        btnEnviar = (Button)findViewById(R.id.button5);
+        tv1= findViewById(R.id.tv1);
+        btnEnviar = findViewById(R.id.button5);
 
         Bundle extras = getIntent().getExtras();
         datos = extras.getString("datos1");
@@ -42,11 +47,9 @@ public class carga_confirmacion extends AppCompatActivity {
         datos4 = extras.getString("datos5");
         datos5 = extras.getString("datos6");
 
-        tv1.setText("Nombre: " + datos1 + "\n Apellido: " + datos2 + "\n DNI: " + datos3 +
-                "\n Fecha de nacimiento: " + datos4 + "\n Obsercion: " + datos5 + "\n Institucion: "
-                + datos );
+        tv1.setText("Nombre: " + datos1 + "\n Apellido: " + datos2 + "\n DNI: " + datos3 + "\n Fecha de nacimiento: " + datos4 + "\n Obsercion: " + datos5 + "\n Institucion: " + datos);
 
-        btnEnviar.setOnClickListener(new View.OnClickListener() {
+        btnEnviar.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 ejecutarServicio("http://192.168.100.17:80/devposaderos/carga_datos.php"); //aqui se cambia la ip y el puerto
@@ -88,5 +91,4 @@ public class carga_confirmacion extends AppCompatActivity {
         Intent atras= new Intent(this, carga_datos2.class);
         startActivity(atras);
     }
-
 }

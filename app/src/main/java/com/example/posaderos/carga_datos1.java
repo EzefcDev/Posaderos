@@ -21,7 +21,7 @@ public class carga_datos1 extends AppCompatActivity {
         et2 = findViewById(R.id.editTextApellido);
         et3 = findViewById(R.id.editTextDni);
         et4 = findViewById(R.id.editTextDate);
-        et5 = findViewById(R.id.editTextObservacion);
+        et5 = findViewById(R.id.editTextObservaciones);
     }
     public void siguiente(View v){
         Intent envio= new Intent(this,carga_datos2.class);

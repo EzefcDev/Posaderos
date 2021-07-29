@@ -24,9 +24,8 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.TestPosaderos.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Posaderos.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.TestPosaderos.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
+    <style name="Theme.Posaderos.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

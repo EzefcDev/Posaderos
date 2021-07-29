@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2D5D7"
     tools:context=".carga_confirmacion">
 
     <ImageView
@@ -35,10 +35,10 @@
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="210dp"
-        android:layout_height="91dp"
+        android:layout_width="228dp"
+        android:layout_height="167dp"
         android:layout_marginTop="128dp"
-        android:background="@color/white"
+        android:background="@color/basico_gris"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,4 +66,5 @@
         android:text="@string/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

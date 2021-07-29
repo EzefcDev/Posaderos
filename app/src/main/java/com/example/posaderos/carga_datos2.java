@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 
 public class carga_datos2 extends AppCompatActivity {
-
     private EditText et1;
     String d, d1, d2, d3, d4;
 
@@ -24,7 +23,6 @@ public class carga_datos2 extends AppCompatActivity {
         d2 = getIntent().getStringExtra("datos2");
         d3 = getIntent().getStringExtra("datos3");
         d4 = getIntent().getStringExtra("datos4");
-
 
     }
     public void siguiente2(View v){
