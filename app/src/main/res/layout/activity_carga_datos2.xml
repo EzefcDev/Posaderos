@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerInstitucion"
-        tools:ignore="RtlCompat,RtlHardcoded"
+        tools:ignore="RtlCompat,RtlHardcoded,TextContrastCheck"
         tools:targetApi="lollipop" />
 
     <ImageView
@@ -98,7 +98,8 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtView4" />
+        app:layout_constraintTop_toBottomOf="@+id/txtView4"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/spinnerInstitucion"
@@ -108,11 +109,12 @@
         android:background="@color/basico_gris"
         android:ems="10"
         android:hint="@string/spinnerInstitucion"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextMapa"
-        android:importantForAutofill="no" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

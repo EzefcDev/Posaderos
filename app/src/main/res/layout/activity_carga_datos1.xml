@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -50,7 +51,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/BotonSiguiente"
-            app:srcCompat="@drawable/logohorizontal1" />
+            app:srcCompat="@drawable/logohorizontal1"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/txtView3"
@@ -82,7 +84,7 @@
         <EditText
             android:id="@+id/editTextName"
             android:layout_width="360dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:layout_marginTop="2dp"
             android:background="@color/basico_gris"
             android:ems="10"
@@ -91,7 +93,8 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewName" />
+            app:layout_constraintTop_toBottomOf="@+id/txtViewName"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/txtViewApellido"
@@ -109,7 +112,7 @@
         <EditText
             android:id="@+id/editTextApellido"
             android:layout_width="360dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:layout_marginTop="2dp"
             android:background="@color/basico_gris"
             android:ems="10"
@@ -118,7 +121,8 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewApellido" />
+            app:layout_constraintTop_toBottomOf="@+id/txtViewApellido"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/txtViewDni"
@@ -136,7 +140,7 @@
         <EditText
             android:id="@+id/editTextDni"
             android:layout_width="360dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:layout_marginTop="2dp"
             android:background="@color/basico_gris"
             android:ems="10"
@@ -145,7 +149,8 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewDni" />
+            app:layout_constraintTop_toBottomOf="@+id/txtViewDni"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/txtViewDate"
@@ -163,7 +168,7 @@
         <EditText
             android:id="@+id/editTextDate"
             android:layout_width="360dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:layout_marginTop="2dp"
             android:background="@color/basico_gris"
             android:ems="10"
@@ -173,7 +178,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.50"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewDate" />
+            app:layout_constraintTop_toBottomOf="@+id/txtViewDate"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/txtViewObservaciones"
@@ -201,7 +207,8 @@
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewObservaciones" />
+            app:layout_constraintTop_toBottomOf="@+id/txtViewObservaciones"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
