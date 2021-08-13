@@ -31,7 +31,7 @@
     <ImageView
         android:id="@+id/imgView2"
         android:layout_width="411dp"
-        android:layout_height="60dp"
+        android:layout_height="55dp"
         android:background="@color/basico_gris"
         android:contentDescription="@string/Logo"
         android:scaleType="fitCenter"

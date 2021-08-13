@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/activity_carga_confirmacion.xml" value="0.18645833333333334" />
-        <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/activity_carga_datos1.xml" value="0.18645833333333334" />
+        <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/activity_carga_confirmacion.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/activity_carga_datos1.xml" value="0.5" />
         <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/activity_carga_datos2.xml" value="0.18" />
-        <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/activity_main.xml" value="0.18645833333333334" />
+        <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/activity_pantalla_final.xml" value="0.18645833333333334" />
+        <entry key="..\:/AndroidStudioProjects/Posaderos/app/src/main/res/layout/toolbar.xml" value="0.22" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/TestPosaderos/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/TestPosaderos/app/src/main/res/layout/activity_splash_lumen.xml" value="0.20416666666666666" />
       </map>
