@@ -10,26 +10,26 @@ import android.widget.Toast;
 
 public class carga_datos1 extends AppCompatActivity {
 
-    private EditText et1, et2, et3, et4, et5;
+    private EditText editText1, editText2, editText3, editText4, editText5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carga_datos1);
 
-        et1 = findViewById(R.id.editTextName);
-        et2 = findViewById(R.id.editTextApellido);
-        et3 = findViewById(R.id.editTextDni);
-        et4 = findViewById(R.id.editTextDate);
-        et5 = findViewById(R.id.editTextObservaciones);
+        editText1 = findViewById(R.id.editTextName);
+        editText2 = findViewById(R.id.editTextApellido);
+        editText3 = findViewById(R.id.editTextDni);
+        editText4 = findViewById(R.id.editTextDate);
+        editText5 = findViewById(R.id.editTextObservaciones);
     }
     public void siguiente(View v){
         Intent envio= new Intent(this,carga_datos2.class);
 
-        String nombre = et1.getText().toString();
-        String apellido = et2.getText().toString();
-        String dni = et3.getText().toString();
-        String fecha = et4.getText().toString();
+        String nombre = editText1.getText().toString();
+        String apellido = editText2.getText().toString();
+        String dni = editText3.getText().toString();
+        String fecha = editText4.getText().toString();
         boolean letraNombre = false;
         boolean letraApellido = false;
 
@@ -61,7 +61,7 @@ public class carga_datos1 extends AppCompatActivity {
             envio.putExtra("datos1", apellido );
             envio.putExtra("datos2", dni);
             envio.putExtra("datos3", fecha);
-            envio.putExtra("datos4", et5.getText().toString());
+            envio.putExtra("datos4", editText5.getText().toString());
             startActivity(envio);
         }
     }
@@ -74,5 +74,9 @@ public class carga_datos1 extends AppCompatActivity {
             }
         }
         return true;
+    }
+    public void Atras1(View v){
+        Intent atras = new Intent(this,MainActivity.class);
+        startActivity(atras);
     }
 }

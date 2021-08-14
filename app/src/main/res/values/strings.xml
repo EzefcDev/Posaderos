@@ -34,15 +34,6 @@
                                la colaboracíon de voluntarios e instituciones que juntos forman la Red de Posaderos.</string>
 
     <string name="BotonConfirmar">Confirmar</string>
-
-
-    <string name="BotSiguiente">Siguiente</string>
-    <string name="textP">Prueba</string>
-    <string name="button2">Atras</string>
-    <string name="button3">Siguiente</string>
-
-    <string name="editTextInstitucion">Institucion</string>
-    <string name="button6">Inicio</string>
-    <string name="tvFinal">Gracias por su colaboracion</string>
+    <string name="BotonEnviar2">Enviar otro Alerta!!</string>
 
 </resources>

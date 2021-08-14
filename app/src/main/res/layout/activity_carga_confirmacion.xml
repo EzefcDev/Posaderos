@@ -16,9 +16,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv1"
+        android:id="@+id/txtvConfirmacion"
         android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/stylo_bordes"
         android:textColor="@color/black"
@@ -28,12 +28,12 @@
         app:layout_constraintTop_toBottomOf="@+id/txtView5" />
 
     <Button
-        android:id="@+id/BotonAtras2"
+        android:id="@+id/BotonAtras3"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
         android:onClick="atras"
-        android:text="@string/button2"
+        android:text="@string/BotonAtras"
         android:textSize="24sp"
         app:cornerRadius="@android:dimen/notification_large_icon_height"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,28 +44,28 @@
     <Button
         android:id="@+id/BotonConfirmar"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="55dp"
         android:text="@string/BotonConfirmar"
         android:textSize="24sp"
         app:cornerRadius="@android:dimen/notification_large_icon_height"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtvConfirmacion" />
 
     <ImageView
         android:id="@+id/imgView2"
         android:layout_width="411dp"
         android:layout_height="55dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="50dp"
         android:background="@color/basico_gris"
         android:contentDescription="@string/Logo"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonAtras2"
+        app:layout_constraintTop_toBottomOf="@+id/BotonAtras3"
         app:srcCompat="@drawable/logohorizontal1" />
 
     <TextView

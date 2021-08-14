@@ -22,8 +22,8 @@
     <Button
         android:id="@+id/BotonSiguientePaso2"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/basico_red2"
         android:onClick="siguiente2"
         android:text="@string/BotonSiguiente"
@@ -32,18 +32,18 @@
         android:textSize="24sp"
         app:cornerRadius="@android:dimen/notification_large_icon_height"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonAtras1"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerInstitucion"
         tools:ignore="RtlCompat,RtlHardcoded"
         tools:targetApi="lollipop" />
 
     <Button
-        android:id="@+id/BotonAtras1"
+        android:id="@+id/BotonAtras2"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="48dp"
+        android:layout_height="55dp"
         android:backgroundTint="@color/fondo1"
-        android:onClick="atras"
+        android:onClick="atras2"
         android:text="@string/BotonAtras"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -51,7 +51,7 @@
         app:cornerRadius="@android:dimen/notification_large_icon_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerInstitucion"
+        app:layout_constraintTop_toBottomOf="@+id/BotonSiguientePaso2"
         tools:ignore="RtlCompat,RtlHardcoded,TextContrastCheck"
         tools:targetApi="lollipop" />
 
@@ -59,7 +59,7 @@
         android:id="@+id/imgView3"
         android:layout_width="411dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:background="@color/basico_gris"
         android:contentDescription="@string/Logo"
         android:scaleType="fitCenter"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonSiguientePaso2"
+        app:layout_constraintTop_toBottomOf="@+id/BotonAtras2"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logohorizontal1" />
 

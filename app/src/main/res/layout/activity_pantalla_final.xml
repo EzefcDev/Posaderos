@@ -54,16 +54,16 @@
         app:layout_constraintTop_toBottomOf="@+id/txtView6" />
 
     <Button
-        android:id="@+id/BotonEnviarAlerta"
+        android:id="@+id/BotonEnviarAlerta2"
         android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_height="55dp"
         android:layout_marginTop="44dp"
         android:backgroundTint="@color/basico_red2"
         android:drawableLeft="@drawable/alertaicon"
-        android:text="@string/BotonEnviar"
+        android:text="@string/BotonEnviar2"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:cornerRadius="@android:dimen/notification_large_icon_height"
         app:layout_constraintBottom_toTopOf="@+id/imgView2"
         app:layout_constraintEnd_toEndOf="parent"
