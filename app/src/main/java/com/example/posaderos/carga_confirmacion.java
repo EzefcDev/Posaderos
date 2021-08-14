@@ -36,8 +36,8 @@ public class carga_confirmacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carga_confirmacion);
 
-        tv1= findViewById(R.id.tv1);
-        btnEnviar = findViewById(R.id.button5);
+        tv1= findViewById(R.id.txtvConfirmacion);
+        btnEnviar = findViewById(R.id.BotonConfirmar);
 
         Bundle extras = getIntent().getExtras();
         datos = extras.getString("datos1");
@@ -47,7 +47,12 @@ public class carga_confirmacion extends AppCompatActivity {
         datos4 = extras.getString("datos5");
         datos5 = extras.getString("datos6");
 
-        tv1.setText("Nombre: " + datos1 + "\n Apellido: " + datos2 + "\n DNI: " + datos3 + "\n Fecha de nacimiento: " + datos4 + "\n Obsercion: " + datos5 + "\n Institucion: " + datos);
+        tv1.setText("Nombre: " + datos1 +
+                    "\n\n Apellido: " + datos2 +
+                    "\n\n DNI: " + datos3 +
+                    "\n\n Fecha de nacimiento: " + datos4 +
+                    "\n\n Observacion: " + datos5 +
+                    "\n\n Institucion: " + datos);
 
         btnEnviar.setOnClickListener(new OnClickListener() {
             @Override
