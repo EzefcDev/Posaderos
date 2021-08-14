@@ -27,22 +27,20 @@
     <string name="editTextMapa">MAPA</string>
     <string name="spinnerInstitucion" />
     <string name="txtView5">Verifica los datos a confirmar.</string>
+    <string name="txtView6">Gracias por tu colaboracion.</string>
+
+    <string name="txtView7"><b>Ya formás parte de la Fundacíon Lumen Cor</b> que, desde hace diez años,
+                               trabaja en la asistencia de personas en situacíon de calle gracías a
+                               la colaboracíon de voluntarios e instituciones que juntos forman la Red de Posaderos.</string>
+
+    <string name="BotonConfirmar">Confirmar</string>
 
 
-
-
-    <string name="Boton1">Ingresar</string>
-    <string name="Boton2">Registrarse</string>
-    <string name="Boton3">Invitado</string>
-    <string name="ImBface">Face</string>
-    <string name="ImaBinst">Instagram</string>
-    <string name="ImaBtwit">Twiter</string>
-    <string name="Imagen1">imagen</string>
     <string name="BotSiguiente">Siguiente</string>
     <string name="textP">Prueba</string>
     <string name="button2">Atras</string>
     <string name="button3">Siguiente</string>
-    <string name="button5">Confirmacion</string>
+
     <string name="editTextInstitucion">Institucion</string>
     <string name="button6">Inicio</string>
     <string name="tvFinal">Gracias por su colaboracion</string>

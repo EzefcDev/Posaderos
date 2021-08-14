@@ -4,4 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pantalla_final"/>
+    android:background="@color/white"
+    tools:context=".pantalla_final" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/txtView6"
+        android:textColor="@color/basico_red2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="411dp"
+        android:layout_height="55dp"
+        android:background="@color/basico_gris"
+        android:contentDescription="@string/Logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logohorizontal1" />
+
+    <TextView
+        android:id="@+id/txtView7"
+        android:layout_width="353dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="16dp"
+        android:justificationMode="inter_word"
+        android:text="@string/txtView7"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView6" />
+
+    <Button
+        android:id="@+id/BotonEnviarAlerta"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/basico_red2"
+        android:drawableLeft="@drawable/alertaicon"
+        android:text="@string/BotonEnviar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:cornerRadius="@android:dimen/notification_large_icon_height"
+        app:layout_constraintBottom_toTopOf="@+id/imgView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView7"
+        app:layout_constraintVertical_bias="0.321"
+        tools:ignore="RtlCompat,RtlHardcoded" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/BotonSiguiente"
+        android:id="@+id/BotonSiguientePaso2"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="4dp"
@@ -33,12 +33,12 @@
         app:cornerRadius="@android:dimen/notification_large_icon_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonAtras"
+        app:layout_constraintTop_toBottomOf="@+id/BotonAtras1"
         tools:ignore="RtlCompat,RtlHardcoded"
         tools:targetApi="lollipop" />
 
     <Button
-        android:id="@+id/BotonAtras"
+        android:id="@+id/BotonAtras1"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="48dp"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonSiguiente"
+        app:layout_constraintTop_toBottomOf="@+id/BotonSiguientePaso2"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logohorizontal1" />
 

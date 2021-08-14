@@ -37,7 +37,7 @@ public class carga_confirmacion extends AppCompatActivity {
         setContentView(R.layout.activity_carga_confirmacion);
 
         tv1= findViewById(R.id.tv1);
-        btnEnviar = findViewById(R.id.button5);
+        btnEnviar = findViewById(R.id.BotonConfirmar);
 
         Bundle extras = getIntent().getExtras();
         datos = extras.getString("datos1");

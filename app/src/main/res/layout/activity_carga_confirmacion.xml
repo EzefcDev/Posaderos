@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtView5" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/BotonAtras2"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
@@ -39,14 +39,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/BotonConfirmar" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/BotonConfirmar"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="100dp"
-        android:text="@string/button5"
+        android:text="@string/BotonConfirmar"
         android:textSize="24sp"
         app:cornerRadius="@android:dimen/notification_large_icon_height"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/BotonAtras2"
         app:srcCompat="@drawable/logohorizontal1" />
 
     <TextView
