@@ -81,7 +81,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
@@ -90,7 +90,7 @@
         android:layout_width="300dp"
         android:layout_height="250dp"
         android:layout_marginTop="16dp"
-        android:background="@color/basico_gris"
+        android:background="@drawable/stylo_bordes"
         android:ems="10"
         android:hint="@string/editTextMapa"
         android:importantForAutofill="no"
@@ -106,7 +106,7 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
-        android:background="@color/basico_gris"
+        android:background="@drawable/stylo_bordes"
         android:ems="10"
         android:hint="@string/spinnerInstitucion"
         android:importantForAutofill="no"

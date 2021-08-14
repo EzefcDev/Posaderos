@@ -20,7 +20,7 @@
         android:layout_width="350dp"
         android:layout_height="200dp"
         android:layout_marginTop="24dp"
-        android:background="@color/basico_gris"
+        android:background="@drawable/stylo_bordes"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
