@@ -92,7 +92,7 @@ public class carga_confirmacion extends AppCompatActivity {
         startActivity(confirmacion);
     }
 
-    public void atras(View v){
+    public void atras3(View v){
         Intent atras= new Intent(this, carga_datos2.class);
         startActivity(atras);
     }

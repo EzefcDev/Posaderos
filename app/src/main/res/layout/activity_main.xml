@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
     <include
         android:id="@+id/toolbar"
@@ -21,32 +25,32 @@
         android:layout_width="339dp"
         android:layout_height="158dp"
         android:contentDescription="@string/imgView1"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/laayudasosvos" />
 
-    <ImageView
-        android:id="@+id/imgView2"
-        android:layout_width="411dp"
-        android:layout_height="55dp"
-        android:background="@color/basico_gris"
-        android:contentDescription="@string/Logo"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonEnviarAlerta2"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/logohorizontal1" />
+        <ImageView
+            android:id="@+id/imgView2"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/basico_grisCL"
+            android:contentDescription="@string/Logo"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BotonEnviarAlerta2"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/logohorizontal1"
+            tools:ignore="ImageContrastCheck" />
 
-    <Button
+        <Button
         android:id="@+id/BotonEnviarAlerta2"
         android:layout_width="300dp"
         android:layout_height="55dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/basico_red2"
         android:drawableLeft="@drawable/alertaicon"
         android:onClick="PantAlerta"
@@ -55,11 +59,9 @@
         android:textAllCaps="false"
         android:textSize="24sp"
         app:cornerRadius="@android:dimen/notification_large_icon_height"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/txtView2"
         tools:ignore="RtlCompat,RtlHardcoded" />
 
     <TextView
@@ -72,26 +74,21 @@
         android:textColor="@color/black"
         android:textColorHighlight="@color/basico_red2"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
 
     <TextView
         android:id="@+id/txtView2"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/txtView2"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtView1"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintTop_toBottomOf="@+id/txtView1" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+     </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
